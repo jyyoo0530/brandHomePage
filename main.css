@@ -1,0 +1,720 @@
+#mainCanvas1{
+    width:1280px;
+    height: 800px;
+    /*background-color: #F3F3F3;*/
+    /*background-color: black;*/
+}
+
+/* 아래는 mainfeature들에 대한 꾸밈..*/
+#mainLogo{
+    position: absolute;
+    left: 54px;
+    top: 61px;
+}
+#menuHamburger{
+    position: absolute;
+    left: 1170px;
+    top: 63px;
+}
+#FREIGHT9{
+    position: absolute;
+    left: 61px;
+    top: 695.5px;
+}
+#_01{
+    position: absolute;
+    left: 1181px;
+    top: 675px;
+}
+#maxPage{
+    position: absolute;
+    left: 1181px;
+    top: 750px;
+}
+#pageBar{
+    position: absolute;
+    left: 1190px;
+    top: 695px;
+}
+#pageProgressBar{
+    position: absolute;
+    left: 1190px;
+    top: 695px;
+}
+#weProvide{
+    position: absolute;
+    left: 54px;
+    top: 258px; /*303px에서 이동*/
+    animation: weProvideMove 16s linear;
+}
+#weProvideSub1 {
+    position: absolute;
+    left: 420px;
+    top: 358px;
+    opacity: 0;
+    animation: weProvideSub1Move 16s linear infinite;
+}
+#weProvideSub2 {
+    position: absolute;
+    left: 511px;
+    top: 358px;
+    opacity: 0;
+    animation: weProvideSub2Move 16s linear infinite;
+}
+#weProvideSub3 {
+    position: absolute;
+    left: 313px;
+    top: 358px;
+    opacity: 0;
+    animation: weProvideSub3Move 16s linear infinite;
+}
+#weProvideSub4 {
+    position: absolute;
+    left: 505px;
+    top: 358px;
+    opacity: 0;
+    animation: weProvideSub4Move 16s linear infinite;
+}
+#mainLogoText {
+    animation: logoFade 10s infinite linear;
+}
+#mainLogoSymbol{
+    animation: symbolMorph 10s infinite linear;
+}
+
+
+#emailInputBox{
+    width: 326px;
+    height: 50px;
+    position: absolute;
+    left: 414px;
+    top: 680px;
+    border: solid 3px #141414;
+    border-radius: 3px;
+    padding:0;
+    margin:0;
+    text-indent: 21px;
+}
+#emailInputBox:placeholder-shown {
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #b0b0b0;
+    text-indent: 21px;
+}
+#emailConfirmButton{
+    position: absolute;
+    left: 740px;
+    top: 680px;
+    width: 126px;
+    height: 56px;
+    background-color: #141414;
+    border: solid 3px #141414;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans Extrabold",sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+#subscribeRqst{
+    position: absolute;
+    left: 420px;
+    top: 658px;
+}
+#policyAcceptance{
+    position: absolute;
+    left: 509px;
+    top: 750px;
+}
+#policyAcceptanceChkBox{
+    position: absolute;
+    left: 479px;
+    top: 750px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: solid 1px #141414;
+    border-radius: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+/* 아래는 mainFeature의 subFeature들에 대한 꾸밈..*/
+#mainLogo {
+    fill: #141414;
+}
+#mainLogoSymbol{
+    fill: #4a00e0;
+    fill-rule: evenodd;
+}
+#menuHamburgerHiddenBox{
+    fill: white;
+    fill-rule: evenodd;
+}
+#menuHamburgerLine{
+    fill:#131313;
+    fill-rule: evenodd;
+}
+#menuHamburgerHiddenBox:hover + #menuHamburgerLine {
+    fill:#4a00e0;
+}
+#menuHamburgerLine:hover{
+    fill:#4a00e0;
+}
+
+#FREIGHT9text {
+    font-size: 10px;
+    font-family: "Open Sans Extrabold", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.003em;
+}
+#_01text {
+    font-size: 15px;
+    font-family: "Open Sans Extrabold",sans-serif;
+    font-weight: 800;
+}
+#maxPageText {
+    font-size: 15px;
+    font-family: "Open Sans Extrabold", sans-serif;
+    font-weight: 800;
+}
+#pageBarLine {
+    fill: none;
+    stroke: #f2f2f2;
+}
+#pageProgressBarLine{
+    fill: none;
+    stroke: #141414;
+}
+#weProvideText {
+    font-size: 60px;
+    font-family: "Open Sans Extrabold",sans-serif;
+    font-weight: 800;
+}
+.subTexts {
+    font-size: 35px;
+    font-family: "Open Sans Light", sans-serif;
+    font-weight: 300;
+}
+#subscribeRqstText {
+    fill: #141414;
+    font-size: 15px;
+    font-family: "Open Sans Extrabold",sans-serif;
+    font-weight: 800;
+}
+#agreeText {
+    fill: #141414;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+#agreePrivacyPolicy{
+    fill: #003aff;
+    font-family: "Open Sans Semibold", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+
+/*아래는 mainCanvas1의 animation*/
+@keyframes weProvideMove{
+    0%{
+        opacity: 0;
+        top: 303px;
+    }
+    6.2%, 100%{
+        opacity: 1;
+        top: 258px;
+    }
+}
+@keyframes weProvideSub1Move {
+    0%{
+        opacity: 0;
+    }
+    6.25%{
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 1;
+    }
+    18.75%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    31.25%{
+        opacity: 0;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    43.75%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    56.25%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 0;
+    }
+    68.75%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    81.25%{
+        opacity: 0;
+    }
+    87.5%{
+        opacity: 0;
+    }
+    93.75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes weProvideSub2Move {
+    0%{
+        opacity: 0;
+    }
+    6.25%{
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    18.75%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    31.25%{
+        opacity: 0;
+    }
+    37.5%{
+        opacity: 1;
+    }
+    43.75%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    56.25%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 0;
+    }
+    68.75%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    81.25%{
+        opacity: 0;
+    }
+    87.5%{
+        opacity: 0;
+    }
+    93.75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes weProvideSub3Move {
+    0%{
+        opacity: 0;
+    }
+    6.25%{
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    18.75%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    31.25%{
+        opacity: 0;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    43.75%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    56.25%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 1;
+    }
+    68.75%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    81.25%{
+        opacity: 0;
+    }
+    87.5%{
+        opacity: 0;
+    }
+    93.75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes weProvideSub4Move {
+    0%{
+        opacity: 0;
+    }
+    6.25%{
+        opacity: 0;
+    }
+    12.5% {
+        opacity: 0;
+    }
+    18.75%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    31.25%{
+        opacity: 0;
+    }
+    37.5%{
+        opacity: 0;
+    }
+    43.75%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    56.25%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 0;
+    }
+    68.75%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    81.25%{
+        opacity: 0;
+    }
+    87.5%{
+        opacity: 1;
+    }
+    93.75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes logoFade{
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes symbolMorph {
+    0% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+    10% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+    20% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+    25%{
+        transform: translateX(-15px) translateY(-17px);
+    }
+    30% {
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2);
+    }
+    40% {
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2);
+        fill: #141414;
+    }
+    50% {
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2);
+        fill: #141414
+    }
+    60% {
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2);
+        fill: #141414
+    }
+    70% {
+        transform: translateX(-15px) translateY(-17px);
+        fill: #4a00e0
+    }
+    80% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+    90% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+    100% {
+        transform: translateX(-15px) translateY(-17px);
+    }
+}
+
+
+/*@keyframes weProvideMove{*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*        top: 303px;*/
+/*    }*/
+/*    7.692308%, 100%{*/
+/*        opacity: 1;*/
+/*        top: 258px;*/
+/*    }*/
+/*}*/
+/*@keyframes weProvideSub1Move {*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    7.692308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    15.38462% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    23.07692%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    30.76923%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    38.46154%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    46.15385%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    53.84615%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    61.53846%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    69.23077%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    76.92308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    84.61538%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    92.30769%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
+/*@keyframes weProvideSub2Move {*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    7.692308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    15.38462% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    23.07692%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    30.76923%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    38.46154%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    46.15385%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    53.84615%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    61.53846%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    69.23077%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    76.92308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    84.61538%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    92.30769%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
+/*@keyframes weProvideSub3Move {*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    7.692308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    15.38462% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    23.07692%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    30.76923%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    38.46154%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    46.15385%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    53.84615%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    61.53846%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    69.23077%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    76.92308%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    84.61538%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    92.30769%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
+/*@keyframes weProvideSub4Move {*/
+/*    0%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    7.692308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    15.38462% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    23.07692%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    30.76923%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    38.46154%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    46.15385%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    53.84615%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    61.53846%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    69.23077%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    76.92308%{*/
+/*        opacity: 0;*/
+/*    }*/
+/*    84.61538%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    92.30769%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+@keyframes weProvidetoBuildMove {
+
+}
