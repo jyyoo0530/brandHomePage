@@ -1,45 +1,60 @@
+body{
+    display: block;
+}
 #mainCanvas1{
     width:1280px;
     height: 800px;
     /*background-color: #F3F3F3;*/
     /*background-color: black;*/
 }
+#mainCanvas2{
+    width: 1280px;
+    height: 800px;
+    background-color: #141414;
+}
 
 /* 아래는 mainfeature들에 대한 꾸밈..*/
 #mainLogo{
-    position: absolute;
+    position: fixed;
     left: 54px;
     top: 61px;
+    z-index: 10;
 }
 #menuHamburger{
-    position: absolute;
+    position: fixed;
     left: 1170px;
     top: 63px;
+    z-index: 10;
 }
 #FREIGHT9{
-    position: absolute;
+    position: fixed;
     left: 61px;
     top: 695.5px;
+    z-index: 10;
 }
 #_01{
-    position: absolute;
+    position: fixed;
     left: 1181px;
     top: 675px;
+    z-index: 10;
 }
 #maxPage{
-    position: absolute;
+    position: fixed;
     left: 1181px;
     top: 750px;
+    z-index: 10;
 }
 #pageBar{
-    position: absolute;
+    position: fixed;
     left: 1190px;
     top: 695px;
+    z-index: 9;
 }
 #pageProgressBar{
-    position: absolute;
+    position: fixed;
     left: 1190px;
     top: 695px;
+    z-index: 10;
 }
 #weProvide{
     position: absolute;
@@ -79,7 +94,7 @@
     animation: logoFade 10s infinite linear;
 }
 #mainLogoSymbol{
-    animation: symbolMorph 10s infinite linear;
+    animation: symbolMorph 10s infinite ease-in-out;
 }
 
 
@@ -505,8 +520,16 @@
         transform: translateX(-240.36px) translateY(-30.5px) scale(2);
         fill: #141414;
     }
+    45% {
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2) skew(-5deg) ;
+        fill: #141414
+    }
     50% {
         transform: translateX(-240.36px) translateY(-30.5px) scale(2);
+        fill: #141414
+    }
+    55%{
+        transform: translateX(-240.36px) translateY(-30.5px) scale(2) skew(-5deg) ;
         fill: #141414
     }
     60% {
@@ -527,6 +550,26 @@
         transform: translateX(-15px) translateY(-17px);
     }
 }
+
+
+
+
+/*이하 mainCanvas2 CSS 부분*/
+
+/* Container CSS*/
+#coreFunction1 {
+    position: absolute;
+    left: 54px;
+    top: 1045px;
+}
+/* element CSS*/
+#coreFunction1Text {
+    fill: #ffffff;
+    font-size: 60px;
+    font-family: "Open Sans Extrabold", sans-serif;
+    font-weight: 800;
+}
+
 
 
 /*@keyframes weProvideMove{*/
